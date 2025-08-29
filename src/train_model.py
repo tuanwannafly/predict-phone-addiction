@@ -29,7 +29,7 @@ def train_and_save_model():
     print("Best Alpha: ", grid_search.best_params_["lasso__alpha"])
     print("Best CV (MSE): ", grid_search.best_score_)
 
-    joblib.dump(grid_search, "/mnt/c/Learning/project/project for apply/predict phone addiction/save_models/lasso_model.pkl")
+    joblib.dump(grid_search, "C:/Learning/project/project for apply/predict phone addiction/save_models/lasso_model.pkl")
     print("Saved model in ../save_models/lasso_model.pkl")
 
 if __name__ == "__main__":

@@ -4,7 +4,7 @@ import numpy as np
 
 st.title("Teen Phone addiction predictor")
 
-model = joblib.load("/mnt/c/Learning/project/project for apply/predict phone addiction/save_models/lasso_model.pkl")
+model = joblib.load("C:/Learning/project/project for apply/predict phone addiction/save_models/lasso_model.pkl")
 
 st.write("Nhap thong tin de du doan Addiction Level")
 
