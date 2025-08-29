@@ -3,7 +3,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 
 # Doc du lieu
-def load_data(path='/mnt/c/Learning/project/project for apply/predict phone addiction/data/teen_phone_addiction_dataset.csv'):
+def load_data(path='C:/Learning/project/project for apply/predict phone addiction/data/teen_phone_addiction_dataset.csv'):
     data = pd.read_csv(path)
     #Chi lay cac cot so
     data = data.select_dtypes(include=["number"])
