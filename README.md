@@ -9,6 +9,8 @@ Duoc xay tu **scikit-learn** va deploy tren **Streamlit**.
 link dataset: https://www.kaggle.com/datasets/sumedh1507/teen-phone-addiction <br>
 Tac gia : https://www.kaggle.com/sumedh1507
 
+## Link web project
+https://predict-phone-addiction-fsz4tqqyz2eonx66wuj5b8.streamlit.app/
 
 ## 📂 Project Structure
 predict-phone-addiction/ <br>
@@ -49,7 +51,7 @@ streamlit run app.py
 
 
 ## Deploy
-https:https://predict-phone-addiction-fsz4tqqyz2eonx66wuj5b8.streamlit.app/
+https://predict-phone-addiction-fsz4tqqyz2eonx66wuj5b8.streamlit.app/
 
 📦 requirements.txt
 streamlit
