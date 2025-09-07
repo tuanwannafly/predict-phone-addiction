@@ -5,7 +5,7 @@ import pandas as pd
 import os
 
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
-MODEL_PATH = os.path.join(BASE_DIR, "..", "save_models", "lasso_model.pkl")
+MODEL_PATH = os.path.join(BASE_DIR, "save_models", "lasso_model.pkl")
 CSV_PATH = os.path.join(BASE_DIR, "..", "data", "teen_phone_addiction_dataset.csv")
 
 model = joblib.load(MODEL_PATH)
