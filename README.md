@@ -1,27 +1,27 @@
 # 📱 Teen Phone Addiction Predictor
 
-Day la project du doan muc do su dung dien thoai cua hoc sinh dua tren dataset tu kaggle.
+Day la project du doan muc do su dung dien thoai cua hoc sinh dua tren dataset tu kaggle. <br>
 Duoc xay tu **scikit-learn** va deploy tren **Streamlit**.
 
 ---
 
 ## Dataset 
-link dataset: https://www.kaggle.com/datasets/sumedh1507/teen-phone-addiction
+link dataset: https://www.kaggle.com/datasets/sumedh1507/teen-phone-addiction <br>
 Tac gia : https://www.kaggle.com/sumedh1507
 
 
 ## 📂 Project Structure
-predict-phone-addiction/
-│── data/teen_phone_addiction_dataset.csv # dataset
-│── save_models/lasso_model.pkl # trained model 
-│── src/ # training & evaluation scripts
-│ ├── preprocess.py
-│ ├── train_model.py
-│ ├── evaluate.py
-│ └── predict.py
-│── app.py # Streamlit app entry point
-│── requirements.txt # dependencies
-│── README.md # documentation
+predict-phone-addiction/ <br>
+│── data/teen_phone_addiction_dataset.csv # dataset <br>
+│── save_models/lasso_model.pkl # trained model <br>
+│── src/ # training & evaluation scripts <br>
+│ ├── preprocess.py <br>
+│ ├── train_model.py <br>
+│ ├── evaluate.py <br>
+│ └── predict.py <br>
+│── app.py # Streamlit app entry point <br>
+│── requirements.txt # dependencies <br>
+│── README.md # documentation <br>
 
 
 ---
