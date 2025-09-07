@@ -4,6 +4,12 @@ from sklearn.model_selection import train_test_split, GridSearchCV
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import PolynomialFeatures, StandardScaler
 from preprocess import load_data, split_data, split_features_target
+import os
+
+
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_PATH = os.path.join(BASE_DIR, "save_models", "lasso_model.pkl")
 
 def train_and_save_model():
     data = load_data()
@@ -29,8 +35,8 @@ def train_and_save_model():
     print("Best Alpha: ", grid_search.best_params_["lasso__alpha"])
     print("Best CV (MSE): ", grid_search.best_score_)
 
-    joblib.dump(grid_search, "C:/Learning/project/project for apply/predict phone addiction/save_models/lasso_model.pkl")
-    print("Saved model in ../save_models/lasso_model.pkl")
+    joblib.dump(grid_search, MODEL_PATH)
+    print("Saved model in {MODEL_PATH}")
 
 if __name__ == "__main__":
     train_and_save_model()

@@ -1,6 +1,11 @@
 import pandas as pd
 from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
+import os
+
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+DATA_PATH = os.path.join(BASE_DIR, "data", "teen_phone_addiction_dataset.csv")
 
 # Doc du lieu
 def load_data(path='C:/Learning/project/project for apply/predict phone addiction/data/teen_phone_addiction_dataset.csv'):

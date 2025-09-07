@@ -2,12 +2,17 @@ import joblib
 from sklearn.metrics import mean_squared_error, mean_absolute_error, r2_score
 from sklearn.model_selection import train_test_split
 from preprocess import load_data, split_data, split_features_target
+import os
+
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_PATH = os.path.join(BASE_DIR, "save_models", "lasso_model.pkl")
 
 def evaluate_model():
     data = load_data()
     x, y = split_features_target(data)
     x_train, x_test, y_train, y_test = split_data(x, y)
-    model = joblib.load('C:/Learning/project/project for apply/predict phone addiction/save_models/lasso_model.pkl')
+    model = joblib.load(MODEL_PATH)
     y_pred = model.predict(x_test)
     print('MSE: ',  mean_squared_error(y_test, y_pred))
     print('MAE: ',  mean_absolute_error(y_test, y_pred))
