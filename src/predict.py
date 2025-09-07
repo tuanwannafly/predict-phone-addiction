@@ -1,8 +1,11 @@
 import joblib
 import pandas as pd
+import os
 
-MODEL_PATH = r"C:\Learning\project\project for apply\predict phone addiction\save_models\lasso_model.pkl"
-CSV_PATH = r"C:\Learning\project\project for apply\predict phone addiction\data\teen_phone_addiction_dataset.csv"
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+MODEL_PATH = os.path.join(BASE_DIR, "save_models", "lasso_model.pkl")
+CSV_PATH = os.path.join(BASE_DIR, "data", "teen_phone_addiction_dataset.csv")
 
 def predict_new(sample_dict):
     # Load model
